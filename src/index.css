@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar {
+    background-color: #FFB6C1;
+}
+
+.color-garis {
+    border-color: #008080;
+}
+
+.color-footer {
+    color: #008080;
+}

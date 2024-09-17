@@ -1,9 +1,19 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import CardHome from '../components/CardHome'
+import CardHomeResep from '../components/CardHomeResep'
+import Footer from '../components/Footer'
 
 export default function Home() {
     return (
-        <div className='flex items-center justify-center h-screen'>
-            <h1 className='text-3xl font-bold'>Home</h1>
-        </div>
+        <>
+            <Navbar />
+            <CardHome />
+            <CardHomeResep />
+            <div className='pt-10'>
+                <Footer />
+            </div>
+
+        </>
     )
 }
