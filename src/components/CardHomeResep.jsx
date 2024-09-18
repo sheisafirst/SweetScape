@@ -3,9 +3,16 @@ import React from 'react'
 export default function CardHomeResep() {
     return (
         <div className='container'>
-            <div className='grid grid-cols-2 gap-10'>
-                <div className='pt-2'>
-                    <div className='pt-10'>
+            <div className='grid md:grid-cols-2 gap-10 '>
+                <div
+                    className='mt-10 order-2 md:order-1 overflow-y-auto'
+                    style={{
+                        maxHeight: '80vh', // Sesuaikan tinggi maksimal
+                        overflowY: 'auto', // Mengaktifkan scroll secara vertikal
+                    }}
+                >
+
+                    <div>
                         <a
                             href="#"
                             className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
@@ -20,7 +27,7 @@ export default function CardHomeResep() {
                                     Classic Tiramisu
                                 </h5>
                                 <p className="mb-3 font-thin text-gray-700 dark:text-gray-400" style={{ lineHeight: '1.2', fontSize: '14px' }}>
-                                    kuning telur - gula bubuk - mascarpone cheese (tadi pakai cream cheese dikocok hingga lembut) - vanilla ekstrak - whipping cream, kocok kaku - kopi instan - gula pasir - air panas - lady finger vicenzovo - Coklat bubuk untuk taburan
+                                    kuning telur - gula bubuk - mascarpone cheese - vanilla ekstrak - whipping cream, kocok kaku - kopi instan - gula pasir - air panas - lady finger vicenzovo - Coklat bubuk untuk taburan
                                 </p>
                                 <div className='flex items-center gap-3'>
                                     <img src="/Clock.svg" alt="clock" className='w-5 h-5' />
@@ -70,7 +77,7 @@ export default function CardHomeResep() {
                                     Cheesecuit
                                 </h5>
                                 <p className="mb-3 font-thin text-gray-700 dark:text-gray-400" style={{ lineHeight: '1.2', fontSize: '14px' }}>
-                                    kuning telur - gula bubuk -  mascarpone cheese (tadi pakai cream cheese dikocok hingga lembut) - vanilla ekstrak - whipping cream -kopi instan - gula pasir - air panas -  lady finger vicenzovo - Coklat bubuk
+                                    whipping cream bubuk - air es - keju spread - susu kental manis - crackers - susu UHT/ air kopi - topping coklat bubuk
                                 </p>
                                 <div className='flex items-center gap-3'>
                                     <img src="/Clock.svg" alt="clock" className='w-5 h-5' />
@@ -118,7 +125,7 @@ export default function CardHomeResep() {
                                     Mille Crepes Strawberry
                                 </h5>
                                 <p className="mb-3 font-thin text-gray-700 dark:text-gray-400" style={{ lineHeight: '1.2', fontSize: '14px' }}>
-                                    tepung terigu protein sedang / serbaguna - pasta strawberry - gula pasir - telur - susu UHT cair - margarin - garam - whipped cream bubuk (sy pake Haan) - air dingin - susu kental manis sesuai selera (bila suka)
+                                    tepung terigu protein sedang / serbaguna - pasta strawberry - gula pasir - telur - susu UHT cair - margarin - garam - whipped cream bubuk - air dingin - susu kental manis sesuai selera (bila suka)
                                 </p>
                                 <div className='flex items-center gap-3'>
                                     <img src="/Clock.svg" alt="clock" className='w-5 h-5' />
@@ -201,7 +208,7 @@ export default function CardHomeResep() {
                     </div>
                 </div>
                 <div
-                    className='mt-10'
+                    className='mt-10 order-1 md:order-2 mx-auto'
                     style={{
                         display: 'flex',
                         justifyContent: 'center',
