@@ -20,24 +20,23 @@ export default function Footer() {
                     </a>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">
-                                Add Recipe
+                            <a href="/Search" className="hover:underline me-4 md:me-6">
+                                Recipes
                             </a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">
-                                Search
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">
+                            <a href="/Contact" className="hover:underline me-4 md:me-6">
                                 Contact Us
                             </a>
                         </li>
                     </ul>
                     <div className='flex gap-10'>
-                        <img src="instagram.png" alt="instagram" className='w-5' />
-                        <img src="wa.png" alt="whatsapp" className='w-5' />
+                        <a href="#">
+                            <img src="instagram.png" alt="instagram" className='w-5' />
+                        </a>
+                        <a href="">
+                            <img src="wa.png" alt="whatsapp" className='w-5' />
+                        </a>
                     </div>
                 </div>
                 <hr className="my-6 color-garis sm:mx-auto dark:border-gray-700 lg:my-8" />
