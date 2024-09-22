@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './CardRecipe'
 
-export default function Recipes() {
+export default function Recipes({ limit }) {
 
     const data = [
         {
@@ -128,11 +128,19 @@ export default function Recipes() {
         },
     ]
 
+    const displayedData = limit ? data.slice(0, limit) : data;
+
     return (
-        <div className='container grid grid-cols-2 gap-10 pt-10'>
+        <div className='container pt-10 gap-5 space-y-5'>
             {
-                data.map((item, index) => (
-                    <Card key={index} image={item.image} title={item.title} ingredients={item.ingredients} jam={item.jam} />
+                displayedData.map((item, index) => (
+                    <Card
+                        key={index}
+                        image={item.image}
+                        title={item.title}
+                        ingredients={item.ingredients}
+                        jam={item.jam}
+                    />
                 ))
             }
         </div>

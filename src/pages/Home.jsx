@@ -2,18 +2,15 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import CardHome from '../components/CardHome'
 import Footer from '../components/Footer'
-import Recipes from '../components/Recipes'
+import HeroImageHome from '../components/HeroImageHome'
 
 export default function Home() {
     return (
         <>
             <Navbar />
+            <HeroImageHome />
             <CardHome />
-
-            <Recipes />
-            <div className='pt-10'>
-                <Footer />
-            </div>
+            <Footer />
 
         </>
     )
