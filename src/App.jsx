@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // import pages
 import Home from './pages/Home'
-import Search from './pages/Search'
+import Recipes from './pages/Recipes'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 
@@ -12,7 +12,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/recipes" element={<Recipes />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
       </Routes>

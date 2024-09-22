@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './CardRecipe'
 
-export default function Recipes({ limit }) {
+export default function Products({ limit }) {
 
     const data = [
         {
