@@ -5,8 +5,8 @@ export default function CardHome() {
     return (
         <div className='grid md:grid-cols-2 pb-10'>
             <div className='order-2 md:order-1'>
-                <Products limit={2} />
-                <div className="container mt-7 text-center">
+                <Products limit={2} className='md:grid-cols-1' />
+                <div className="text-center">
                     <a href="/Recipes" class="font-medium text-purple-800 dark:text-purple-500 hover:underline">Your Culinary Journey Starts Here</a>
                 </div>
 

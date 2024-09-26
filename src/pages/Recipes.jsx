@@ -10,6 +10,7 @@ export default function Search() {
             <Navbar />
             <SearchInput />
             <Recipes />
+
             <Footer />
         </>
     )
