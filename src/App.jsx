@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import ManageRecipes from './pages/ManageRecipes'
 import List from './pages/List'
+import Edit from './pages/Edit'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/manage" element={<ManageRecipes />} />
         <Route path="/list" element={<List />} />
+        <Route path="/edit" element={<Edit />} />
       </Routes>
     </BrowserRouter>
   )
