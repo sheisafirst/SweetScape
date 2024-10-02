@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './CardRecipe'
+import Card from '../ui/CardRecipe'
 
 export default function Products({ limit, className }) {
 

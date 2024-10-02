@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Products from './blocks/Products';
 
 export default function RecipeList() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,19 +39,19 @@ export default function RecipeList() {
                         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                             <td className="p-4">
                                 <img
-                                    src="/classic tiramisu.jpg"
+                                    src={item.image}
                                     className="w-20 h-20 rounded-full"
-                                    alt="classic tiramisu"
+                                    alt={item.title}
                                 />
                             </td>
                             <th
                                 scope="row"
                                 className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                             >
-                                Classic Tiramisu
+                                {item.title}
                             </th>
                             <td className="px-6 py-4">
-                                kuning telur - gula bubuk - mascarpone cheese (tadi pakai cream cheese dikocok hingga lembut) - vanilla ekstrak - whipping cream, kocok kaku - kopi instan - gula pasir - air panas - lady finger vicenzovo - Coklat bubuk untuk taburan
+                                {item.ingredients}
                             </td>
                             <td className="px-6 py-4">
                                 <a href="#" className="block text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Edit</a>
