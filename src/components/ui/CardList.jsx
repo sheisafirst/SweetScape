@@ -1,34 +1,44 @@
-import React from 'react'
+// CardList.js
+import React from "react";
 
-export default function CardList() {
+function RecipeCard({ title, ingredients, image, jam }) {
   return (
-    <div className='px-20'>
-      <div className='h-60'>
-        <div className='relative overflow-x-auto shadow-md sm:rounded-lg mt-10'>
-          <table className='w-full text-sm text-left rtl:text-right text-gray-500 dark:text-pink-400'>
-            <thead className='text-xs text-gray-700 uppercase bg-pink-50 dark:bg-pink-700 dark:text-pink-400'>
-              <tr>
-                <th scope="col" className="px-16 py-3">
-                  <span className="sr-only">Image</span>
-                </th>
-                <th scope="col" className="px-6 py-3 text-center">
-                  Recipe name
-                </th>
-                <th scope="col" className="px-6 py-3 text-center">
-                  Description
-                </th>
-                <th scope="col" className="px-6 py-3 text-center">
-                  Edit
-                </th>
-                <th scope="col" className="px-6 py-3 text-center">
-                  Delete
-                </th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>
-
-    </div>
-  )
+    <tbody>
+      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <td className="p-4">
+          <img src={image} className="w-20 h-20 rounded-full" alt={title} />
+        </td>
+        <th
+          scope="row"
+          className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+        >
+          {title}
+        </th>
+        <td className="px-6 py-4">
+          {ingredients.map((ingredient, index) => (
+            <div key={index}>{ingredient}</div>
+          ))}
+        </td>
+        <td className="px-6 py-4">{jam}</td>
+        <td className="px-6 py-4">
+          <a
+            href="#"
+            type="button"
+            className="block text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Edit
+          </a>
+        </td>
+        <td className="px-6 py-4">
+          <button
+            onClick={() => alert("Are you sure you want to delete this item?")}
+            className="block text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+            type="button"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  );
 }

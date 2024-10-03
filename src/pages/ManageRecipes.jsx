@@ -7,7 +7,7 @@ export default function ManageRecipes() {
     return (
         <>
             <Navbar />
-            <RecipesEdit />
+            {/* <RecipesEdit /> */}
             <Footer />
         </>
     )

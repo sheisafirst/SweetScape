@@ -9,7 +9,7 @@ export default function Search() {
         <>
             <Navbar />
             <SearchInput />
-            <Products />
+            <Products className="md:grid-cols-2"/>
             <Footer />
         </>
     )
