@@ -19,10 +19,10 @@ export default function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/manage" element={<ManageRecipes />} />
         <Route path="/list" element={<List />} />
         <Route path="/edit" element={<Edit />} />
         <Route path="/add" element={<AddRecipe />} />
+        <Route path="/manage" element={<ManageRecipes />} />
       </Routes>
     </BrowserRouter>
   )
