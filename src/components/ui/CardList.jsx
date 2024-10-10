@@ -1,7 +1,6 @@
-// CardList.js
 import React from "react";
 
-function RecipeCard({ title, ingredients, image, jam }) {
+function CardList({ title, ingredients, image, jam }) {
   return (
     <tbody>
       <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">

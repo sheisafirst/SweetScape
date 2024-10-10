@@ -1,8 +1,6 @@
-// RecipeList.js
 import React from "react";
 import Products, { dataProducts } from "./Products";
 function RecipeList() {
-
   return (
     <div className="px-24">
       <div className='relative overflow-x-auto shadow-md sm:rounded-lg mt-10'>
@@ -132,9 +130,7 @@ function RecipeList() {
                 </div>
               </td>
             </tr>
-
           ))}
-
         </table>
       </div>
     </div>

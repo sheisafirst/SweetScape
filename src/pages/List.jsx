@@ -9,7 +9,6 @@ export default function List() {
         <>
             <Navbar />
             <RecipesList />
-            {/* <TableList /> */}
             <Footer />
         </>
     )
