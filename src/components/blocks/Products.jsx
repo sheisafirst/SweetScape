@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../ui/CardRecipe'
-
+// import RecipesEdit from './RecipesEdit'
 
 export const dataProducts = [
     {
@@ -128,9 +128,6 @@ export const dataProducts = [
 ]
 
 export default function Products({ limit, className }) {
-
-
-    // data yang akan di tampilkan
     const displayedData = limit ? dataProducts.slice(0, limit) : dataProducts;
 
     return (

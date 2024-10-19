@@ -29,30 +29,5 @@ export default function CardRecipe({ title, ingredients, jam, image }) {
                 </p>
             </div>
         </a>
-
-        // <div className='border p-3 bg-red-200'>
-        //     {title}
-        //     <img src={image} alt="" />
-        //     <h1>{title ? title : "kosong"}</h1>
-        //     <p>
-        //         {
-        //             ingredients && ingredients.map((item, index) => (
-        //                 <>
-        //                     <span>{item}</span>
-        //                     {" - "}
-        //                 </>
-        //             ))
-        //         }
-        //     </p>
-        //     <p>{jam ? jam : "kosong"}</p>
-
-        //     {/* <div className='grid grid-cols-3 gap-3'>
-        //         {
-        //             jam && jam.map((item, index) => (
-        //                 <button key={index} className='py-2 px-4 bg-blue-400 mb-3'>{item}</button>
-        //             ))
-        //         }
-        //     </div> */}
-        // </div >
     )
 }

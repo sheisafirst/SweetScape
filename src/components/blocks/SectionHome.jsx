@@ -1,7 +1,7 @@
 import React from 'react'
 import Products from './Products'
 
-export default function CardHome() {
+export default function SectionHome() {
     return (
         <div className='grid md:grid-cols-2 pb-10'>
             <div className='order-2 md:order-1'>
@@ -9,8 +9,6 @@ export default function CardHome() {
                 <div className="text-center">
                     <a href="/Recipes" class="font-medium text-purple-800 dark:text-purple-500 hover:underline">Your Culinary Journey Starts Here</a>
                 </div>
-
-
             </div>
             <div
                 className='mt-10 order-1 md:order-2 mx-auto'
