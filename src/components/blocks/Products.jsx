@@ -4,6 +4,7 @@ import Card from '../ui/CardRecipe'
 
 export const dataProducts = [
     {
+        id: 1,
         image: "/classic tiramisu.jpg",
         title: "Classic tiramisu",
         ingredients: [
@@ -20,22 +21,24 @@ export const dataProducts = [
             "Coklat bubuk untuk taburan"
         ],
         jam: "45 min",
-
     },
     {
+        id: 2,
         image: "/burnt cheesecake.jpg",
         title: "Burnt cheesecake",
-        ingredients: ["cream cheese ",
-            "butir telur ",
-            "gula halus ",
-            "tepung maizena ",
-            "whipping cream ",
-            "Garam ",
+        ingredients: [
+            "cream cheese",
+            "butir telur",
+            "gula halus",
+            "tepung maizena",
+            "whipping cream",
+            "Garam",
             "Vanili esen",
         ],
         jam: "45 min",
     },
     {
+        id: 3,
         image: "/cheesecuit.webp",
         title: "Cheesecuit",
         ingredients: [
@@ -53,9 +56,11 @@ export const dataProducts = [
         jam: "45 min",
     },
     {
+        id: 4,
         image: "/chocolava-cake-foto-resep-utama.webp",
         title: "Choco Lava",
-        ingredients: ["Minuman coklat bubuk",
+        ingredients: [
+            "Minuman coklat bubuk",
             "Telur ayam",
             "Gula pasir",
             "Tepung terigu",
@@ -65,9 +70,11 @@ export const dataProducts = [
         jam: "45 min",
     },
     {
+        id: 5,
         image: "/mille crepes.jpg",
         title: "Mille Crepes",
-        ingredients: ["Tepung terigu protein sedang / serbaguna",
+        ingredients: [
+            "Tepung terigu protein sedang / serbaguna",
             "Pasta strawberry",
             "Gula pasir",
             "Telur",
@@ -81,9 +88,11 @@ export const dataProducts = [
         jam: "45 min",
     },
     {
+        id: 6,
         image: "/macaron.jpg",
         title: "Macaron",
-        ingredients: ["Almond Powder (saring halus)",
+        ingredients: [
+            "Almond Powder (saring halus)",
             "Icing Sugar",
             "Egg White",
             "(+ Food Color)",
@@ -94,9 +103,11 @@ export const dataProducts = [
         jam: "45 min",
     },
     {
+        id: 7,
         image: "/panna cotta mangga.jpg",
         title: "Panna Cotta Mangga",
-        ingredients: ["Susu cair segar",
+        ingredients: [
+            "Susu cair segar",
             "Gula pasir",
             "Fibercreme",
             "Gelatin",
@@ -108,9 +119,11 @@ export const dataProducts = [
         jam: "45 min",
     },
     {
+        id: 8,
         image: "/soft cookies rv.jpg",
         title: "Soft Cookies Red Velvet",
-        ingredients: ["Gula Palm",
+        ingredients: [
+            "Gula Palm",
             "Gula Pasir",
             "Butter Lelehkan (Saya pakai Margarine)",
             "Telur",
@@ -125,7 +138,7 @@ export const dataProducts = [
         ],
         jam: "45 min",
     },
-]
+];
 
 export default function Products({ limit, className }) {
     const displayedData = limit ? dataProducts.slice(0, limit) : dataProducts;
