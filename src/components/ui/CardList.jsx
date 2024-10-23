@@ -1,6 +1,28 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 function CardList({ title, ingredients, image, jam }) {
+  const handleDelete = () => {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Add your delete logic here
+        Swal.fire(
+          'Deleted!',
+          'Your item has been deleted.',
+          'success'
+        );
+      }
+    });
+  };
+
   return (
     <tbody>
       <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -30,7 +52,7 @@ function CardList({ title, ingredients, image, jam }) {
         </td>
         <td className="px-6 py-4">
           <button
-            onClick={() => alert("Are you sure you want to delete this item?")}
+            onClick={handleDelete}
             className="block text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
             type="button"
           >
@@ -41,3 +63,5 @@ function CardList({ title, ingredients, image, jam }) {
     </tbody>
   );
 }
+
+export default CardList;
