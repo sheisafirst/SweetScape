@@ -5,13 +5,16 @@ export default function ContactForm() {
         <>
             <div className='px-8 pt-10'>
                 <section className='relative'>
-                    <img src="/contact1.jpg" alt="baking" className='absolute w-full h-full object-cover -z-10 rounded-lg' style={{ opacity: 0.5 }} />
-                    <div className='grid grid-cols-2 gap-10 p-5'>
-                        <div>
-
+                    <img src="/contact1.jpg" alt="baking" className='absolute w-full h-full object-cover -z-10 rounded-lg object-left-top md:opacity-50 opacity-30'/>
+                    <div className='grid md:grid-cols-2 gap-10 p-5'>
+                        <div className='md:pt-20 md:pl-36 order-1 md:order-1'>
+                            <h1 className='text-black font-bold text-2xl'>Have a sweet idea or a question? We’d love to hear from you!</h1>
+                            <p className='text-black font-normal text-lg pt-5'>
+                                Whether you’re looking for baking tips, have a recipe suggestion, or just want to chat about your favorite desserts, don’t hesitate to reach out. Your feedback helps us make this space sweeter for everyone!
+                            </p>
                         </div>
-                        <div>
-                            <form className="max-w-sm mx-auto bg-pink-50 border border-pink-200 rounded-xl p-6 shadow-xl shadow-pink-300/50 hover:shadow-pink-400/40 transition-all duration-300 ease-in-out"
+                        <div className='order-1 md:order-2'>
+                            <form className="max-w-sm mx-auto bg-white-50 border border-gray-400 rounded-xl p-6 shadow-xl shadow-white-300/50 hover:shadow-white-400/40 transition-all duration-300 ease-in-out"
                             >
                                 <h1 className='text-black text-center font-bold text-3xl pb-5'>Contact Us</h1>
                                 <div className="mb-5">
@@ -24,7 +27,7 @@ export default function ContactForm() {
                                     <input
                                         type="text"
                                         id="name"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="Your name"
                                         required=""
                                     />
@@ -39,7 +42,7 @@ export default function ContactForm() {
                                     <input
                                         type="email"
                                         id="email"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="name@flowbite.com"
                                         required=""
                                     />
@@ -55,7 +58,7 @@ export default function ContactForm() {
                                     <textarea
                                         id="message"
                                         rows={4}
-                                        className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        className="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         placeholder="Leave a comment..."
                                         defaultValue={""}
                                     />
