@@ -24,7 +24,7 @@ function RecipeList() {
   };
 
   return (
-    <div className="px-24">
+    <div className="md:px-24">
       <div className='relative overflow-x-auto shadow-md sm:rounded-lg mt-10'>
         <table className="min-w-full text-left text-sm font-light">
           <thead className="text-xs text-gray-700 uppercase bg-pink-50 dark:bg-pink-700 dark:text-gray-400">
@@ -32,31 +32,31 @@ function RecipeList() {
               <th scope="col" className="px-16 py-3">
                 <span className="sr-only">Image</span>
               </th>
-              <th scope="col" className="px-6 py-3">Recipe Name</th>
-              <th scope="col" className="px-6 py-3">Ingredients</th>
-              <th scope="col" className="px-6 py-3">Time</th>
-              <th scope="col" className="px-6 py-3">Edit</th>
-              <th scope="col" className="px-6 py-3">Delete</th>
+              <th scope="col" className="px-3 py-3">Recipe Name</th>
+              <th scope="col" className="px-3 py-3">Ingredients</th>
+              <th scope="col" className="px-3 py-3">Time</th>
+              <th scope="col" className="px-3 py-3">Edit</th>
+              <th scope="col" className="px-3 py-3">Delete</th>
             </tr>
           </thead>
           <tbody>
             {dataProducts.map((item, index) => (
               <tr key={index}>
-                <td className="whitespace-nowrap px-6 py-4">
-                  <img className="object-cover w-40 rounded-full" src={item.image} alt="image" />
+                <td className="whitespace-nowrap px-3 py-4">
+                  <img className="object-cover w-20 h-20 rounded-full" src={item.image} alt="image" />
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
+                <td className="whitespace-nowrap px-3 py-4">
                   <p className="text-base font-bold text-gray-900">{item.title}</p>
                 </td>
-                <td className="px-6 py-4">
-                  <p className="mb-3 font-thin text-gray-700" style={{ lineHeight: '1.5', fontSize: '12px' }}>
+                <td className="px-3 py-4">
+                  <p className="mb-3 font-thin text-gray-700 line-clamp-5" style={{ lineHeight: '1.5', fontSize: '12px' }}>
                     {item.ingredients.join(" - ")}
                   </p>
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
+                <td className="whitespace-nowrap px-3 py-4">
                   <p>{item.jam}</p>
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
+                <td className="whitespace-nowrap px-3 py-4">
                   <Link 
                     to={`/edit/${item.id}`} 
                     className="block text-white bg-green-700 hover:bg-green-800 rounded-lg text-sm px-4 py-1.5 text-center"
@@ -64,7 +64,7 @@ function RecipeList() {
                     Edit
                   </Link>
                 </td>
-                <td className="whitespace-nowrap px-6 py-4">
+                <td className="whitespace-nowrap px-3 py-4">
                   <button
                     onClick={() => handleDelete(item.title)}
                     className="block text-white bg-red-700 hover:bg-red-800 rounded-lg text-sm px-4 py-1.5 text-center"

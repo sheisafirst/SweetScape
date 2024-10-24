@@ -6,7 +6,6 @@ import Recipes from './pages/Recipes'
 import RecipeDetail from './components/blocks/DetailRecipe'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
-import ManageRecipes from './pages/ManageRecipes'
 import List from './pages/List'
 import Edit from './pages/Edit'
 import AddRecipe from './pages/AddRecipe'
@@ -26,7 +25,6 @@ export default function App() {
         <Route path="/list" element={<RecipeList />} />
         <Route path="/edit/:id" element={<Edit />} />
         <Route path="/add" element={<AddRecipe />} />
-        <Route path="/manage" element={<ManageRecipes />} />
       </Routes>
     </BrowserRouter>
   )
