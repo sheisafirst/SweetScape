@@ -5,10 +5,10 @@ export default function CardRecipe({ id, title, ingredients, jam, image }) {
     return (
         <Link
             to={`/recipes/${id}`}
-            className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col  bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
             <img
-                className="object-cover w-full rounded-t-lg aspect-[3/4] h-60 md:rounded-none md:rounded-s-lg"
+                className="object-cover xs:w-full rounded-t-lg aspect-[3/4] h-60 md:rounded-none md:rounded-s-lg"
                 src={image}
                 alt={title}
             />

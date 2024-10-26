@@ -10,14 +10,14 @@ export const dataProducts = [
             "kuning telur",
             "gula bubuk",
             "mascarpone cheese",
-            "cream cheese (dikocok hingga lembut)",
+            "cream cheese",
             "vanilla ekstrak",
-            "whipping cream, kocok kaku",
+            "whipping cream",
             "kopi instan",
             "gula pasir",
             "air panas",
             "lady finger vicenzovo",
-            "Coklat bubuk untuk taburan"
+            "Coklat bubuk"
         ],
         ComplateIngredients: [
             "1. 2 kuning telur",

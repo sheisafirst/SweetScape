@@ -69,7 +69,7 @@ export default function SearchInput() {
 
             <div className="mt-4 ">
                 <h2 className="text-lg font-semibold">Hasil Pencarian:</h2>
-                <ul className=' grid grid-cols-1 md:grid-cols-2 gap-5'>
+                <ul className=' grid grid-cols-1 lg:grid-cols-2 gap-5'>
                     {filteredData.map(item => (
                         <div className=''>
                             <CardRecipe
