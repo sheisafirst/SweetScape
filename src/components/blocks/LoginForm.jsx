@@ -58,7 +58,7 @@ if (email === 'astynsheisa@gmail.com' && password === '12345') {
     };
 
     return (
-        <div className='pt-10'>
+        <div className='pt-10 p-5'>
             <form
                 onSubmit={handleSubmit}
                 className="max-w-sm mx-auto bg-white-50 border border-gray-400 rounded-xl p-6 shadow-xl shadow-white-300/50 hover:shadow-white-400/40 transition-all duration-300 ease-in-out"
