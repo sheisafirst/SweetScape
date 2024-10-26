@@ -1,7 +1,16 @@
 import React from 'react'
 import Products from './Products'
+import { useState } from 'react';
 
 export default function SectionHome() {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleText = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    
     return (
         <div className='grid md:grid-cols-2 pb-10'>
             <div className='order-2 md:order-1'>
@@ -11,7 +20,7 @@ export default function SectionHome() {
                 </div>
             </div>
             <div
-                className='mt-10 order-1 md:order-2 mx-auto'
+                className='my-14 order-1 md:order-2 mx-auto'
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -30,29 +39,25 @@ export default function SectionHome() {
                 }}
 
             >
-                <p>
-                    "Discover new favorites and timeless classics with every swipe. Let each recipe inspire your next sweet adventure."
-                    <br />
-                    Uncover hidden gems and tried-and-true delights that elevate your baking game. Whether you're in the mood for
-                    something indulgent or light, our collection has you covered. Transform everyday moments into extraordinary treats
-                    with just a few taps. Embrace the joy of baking and create sweet memories that last a lifetime.
-                    <br />
-                    Every recipe is a doorway to new flavors and creative possibilities. Dive in and let your kitchen become a place of
-                    endless sweetness and inspiration.
-                </p>
+                <div className='mx-auto text-center'>
+            <p className={`sm:text-sm md:text-base ${isExpanded ? '' : 'line-clamp-6'}`}>
+                "Discover new favorites and timeless classics with every swipe. Let each recipe inspire your next sweet adventure."
+                <br />
+                Uncover hidden gems and tried-and-true delights that elevate your baking game. Whether you're in the mood for
+                something indulgent or light, our collection has you covered. Transform everyday moments into extraordinary treats
+                with just a few taps. Embrace the joy of baking and create sweet memories that last a lifetime.
+                <br />
+                Every recipe is a doorway to new flavors and creative possibilities. Dive in and let your kitchen become a place of
+                endless sweetness and inspiration.
+            </p>
+            <button
+                onClick={toggleText}
+                className=" text-blue-500 underline"
+            >
+                {isExpanded ? 'Show Less' : 'Show More'}
+            </button>
+        </div>
             </div>
         </div>
-
-
-
-        // {/* <div className='grid grid-cols-2 gap-10 pt-10'>
-        //     <div className='grid grid-cols-1'>
-        //         <Recipes limit={3} />
-        //     </div>
-        //     <div>
-
-        //     </div>
-        // </div> */}
-
     )
 }

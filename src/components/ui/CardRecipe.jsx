@@ -8,7 +8,7 @@ export default function CardRecipe({ id, title, ingredients, jam, image }) {
             className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
             <img
-                className="object-cover w-40 rounded-t-lg aspect-[3/4] md:rounded-none md:rounded-s-lg"
+                className="object-cover w-full rounded-t-lg aspect-[3/4] h-60 md:rounded-none md:rounded-s-lg"
                 src={image}
                 alt={title}
             />

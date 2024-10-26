@@ -19,12 +19,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<Recipes />} />
-        <Route path="/recipes/:id" element={<RecipeDetail />} />
+        <Route path="/recipes/:id" element={<Detail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/list" element={<RecipeList />} />
+        <Route path="/dashboard" element={<RecipeList />} />
         <Route path="/edit/:id" element={<Edit />} />
-        <Route path="/add" element={<AddRecipe />} />
+        <Route path="dashboard/add" element={<AddRecipe />} />
       </Routes>
     </BrowserRouter>
   )

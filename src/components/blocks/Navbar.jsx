@@ -10,9 +10,9 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="navbar border-gray-200 dark:bg-gray-900">
-            <div>
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-6 p-4">
+        <nav className=" navbar border-gray-200 dark:bg-gray-900">
+            <div className=' mx-6'>
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between  p-4">
                     <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src='/logo1.jpg' className="h-10 w-10 rounded-full" alt="Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sweet Scape</span>

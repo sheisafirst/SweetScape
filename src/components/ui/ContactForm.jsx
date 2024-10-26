@@ -3,7 +3,7 @@ import React from 'react';
 export default function ContactForm() {
     return (
         <>
-            <div className='px-8 pt-10'>
+            <div className='coontainer mx-auto pt-10'>
                 <section className='relative'>
                     <img src="/contact1.jpg" alt="baking" className='absolute w-full h-full object-cover -z-10 rounded-lg object-left-top md:opacity-50 opacity-30'/>
                     <div className='grid md:grid-cols-2 gap-10 p-5'>

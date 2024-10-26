@@ -9,10 +9,10 @@ const RecipeDetail = () => {
   if (!recipe) return <div>Recipe not found</div>;
 
   return (
-    <div className="recipe-detail">
+    <div className="recipe-detail mt-5">
       <h1 className='text-center text-3xl font-bold'>{recipe.title}</h1>
-      <div className='px-20 pt-10 grid md:grid-cols-3 gap-10'>
-        <img src={recipe.image} alt={recipe.title} className='aspect-[3/4] h-50 rounded-xl' />
+      <div className='container mx-auto pt-10 grid md:grid-cols-3 gap-10'>
+        <img src={recipe.image} alt={recipe.title} className='w-full object-cover lg:aspect-[3/4] h-50 rounded-xl' />
         <div className='border shadow border-black-300 p-5 rounded-xl max-h-[27rem] overflow-y-auto'>
           <h2 className='text-center text-xl font-bold'>Ingredients</h2>
           <ul>
