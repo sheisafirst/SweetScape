@@ -1,15 +1,14 @@
 import React from 'react'
-import Navbar from '../components/blocks/Navbar'
-import Footer from '../components/blocks/Footer'
-// import TableList from '../components/TableList'
+import NavbarAdmin from '../components/blocks/NavbarAdmin'
+import FooterAdmin from '../components/blocks/FooterAdmin'
 import RecipesList from '../components/blocks/RecipesList'
 
 export default function List() {
     return (
         <>
-            <Navbar />
+            <NavbarAdmin />
             <RecipesList />
-            <Footer />
+            <FooterAdmin />
         </>
     )
 }
