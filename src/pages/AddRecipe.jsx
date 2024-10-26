@@ -1,14 +1,14 @@
 import React from 'react'
-import Navbar from '../components/blocks/Navbar'
+import NavbarAdmin from '../components/blocks/NavbarAdmin'
 import RecipesAdd from '../components/blocks/RecipesAdd'
-import Footer from '../components/blocks/Footer'
+import FooterAdmin from '../components/blocks/FooterAdmin'
 
 export default function AddRecipe() {
     return (
         <>
-            <Navbar />
+            <NavbarAdmin />
             <RecipesAdd />
-            <Footer />
+            <FooterAdmin />
         </>
     )
 }
