@@ -47,12 +47,18 @@ function RecipeEdit() {
                 item.id === parseInt(id) ? { ...item, title: recipe.title, ingredients: recipe.ingredients, jam: recipe.jam, image: recipe.image } : item
             );
             setDataProducts(updatedData);
-            Swal.fire(
-                'Sukses!',
-                'Perubahan telah disimpan.',
-                'success'
-            );
-            navigate("/list"); 
+            Swal.fire({
+                icon: 'sukses',
+                title: 'Sukses!',
+                text: 'perubahan telah disimpan',
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#3085d6',
+                cancelButtonText: 'Cancel',
+                cancelButtonColor: '#d33',
+                allowOutsideClick: false,
+            });
+            navigate("/dashboard"); 
         }
     };
 

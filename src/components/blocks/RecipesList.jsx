@@ -18,7 +18,14 @@ function RecipeList() {
     }).then((result) => {
       if (result.isConfirmed) {
         setDataProducts(prevData => prevData.filter(item => item.title !== itemTitle));
-        Swal.fire('Terhapus!', 'Resep telah dihapus.', 'success');
+        Swal.fire({
+          icon: 'success', 
+          title: 'Terhapus!', 
+          text: 'Resep telah dihapus.', 
+          showConfirmButton: true,
+          confirmButtonText: 'OK',
+          confirmButtonColor: '#3085d6',
+        });
       }
     });
   };
