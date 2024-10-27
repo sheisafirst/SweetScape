@@ -1,4 +1,6 @@
 import React from 'react'
+import instagram from '../../../public/instagram.png'
+import wa from '../../../public/wa.png'
 
 export default function Footer() {
     return (
@@ -32,10 +34,10 @@ export default function Footer() {
                     </ul>
                     <div className='flex gap-10'>
                         <a href="#">
-                            <img src="instagram.png" alt="instagram" className='w-5' />
+                            <img src={instagram} alt="instagram" className='w-5' />
                         </a>
                         <a href="">
-                            <img src="wa.png" alt="whatsapp" className='w-5' />
+                            <img src={wa} alt="whatsapp" className='w-5' />
                         </a>
                     </div>
                 </div>
