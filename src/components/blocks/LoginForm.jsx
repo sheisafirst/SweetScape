@@ -11,50 +11,49 @@ export default function LoginForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-       // Check if passwords match
-if (password !== repeatPassword) {
-    Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Passwords do not match!',
-        showConfirmButton: true,
-        confirmButtonText: 'OK',
-        confirmButtonColor: '#3085d6',
-        allowOutsideClick: false,
-    });
-    return;
-}
+        // Check if passwords match
+        if (password !== repeatPassword) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Passwords do not match!',
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#3085d6',
+                allowOutsideClick: false,
+            });
+            return;
+        }
 
-// Check if the email and password match the required ones
-if (email === 'astynsheisa@gmail.com' && password === '12345') {
-    Swal.fire({
-        icon: 'success',
-        title: 'Success',
-        text: 'Login successful!',
-        showConfirmButton: true,
-        confirmButtonText: 'OK',   
-        confirmButtonColor: '#3085d6',
-        cancelButtonText: 'Cancel',
-        cancelButtonColor: '#d33',
-        allowOutsideClick: false,
+        // Check if the email and password match the required ones
+        if (email === 'astynsheisa@gmail.com' && password === '12345') {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Login successful!',
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#3085d6',
+                cancelButtonText: 'Cancel',
+                cancelButtonColor: '#d33',
+                allowOutsideClick: false,
 
-    }).then(() => {
-        navigate('/dashboard');
-    });
-} else {
-    Swal.fire({
-        title: 'Error!',
-        text: 'Invalid email or password',
-        icon: 'error',
-        showConfirmButton: true,
-        confirmButtonText: 'OK',
-        cancelButtonText: 'Cancel',
-        cancelButtonColor: '#d33',
-        confirmButtonColor: '#3085d6',
-        allowOutsideClick: false,
-    });
-}
-
+            }).then(() => {
+                navigate('/dashboard');
+            });
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Invalid email or password',
+                icon: 'error',
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                cancelButtonText: 'Cancel',
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#3085d6',
+                allowOutsideClick: false,
+            });
+        }
     };
 
     return (
