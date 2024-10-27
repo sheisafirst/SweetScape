@@ -26,14 +26,14 @@ function RecipeList() {
   return (
     <div className="md:px-24">
        <Link to={"/dashboard/add"}>
-      <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-4 mt-10 text-center">
+      <button className="text-white bg-pink-400 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-4 mt-10 text-center">
         Add Recipes 
       </button>
       </Link>
       <div className='relative overflow-x-auto shadow-md sm:rounded-lg '>
      
         <table className="min-w-full text-left text-sm font-light">
-          <thead className="text-xs text-gray-700 uppercase bg-pink-50 dark:bg-pink-700 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-pink-100 dark:bg-pink-700 dark:text-gray-400">
             <tr className="text-center text-sm">
               <th scope="col" className="px-16 py-3">
                 <span className="sr-only">Image</span>
